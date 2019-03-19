@@ -3,9 +3,12 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\ORM\Mapping\Index;
+use Doctrine\ORM\Mapping\Table;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\IpStoreRepository")
+ * @Table(name="ip_store",indexes={@Index(name="search_idx", columns={"ip"})})
  */
 class IpStore
 {
@@ -17,7 +20,7 @@ class IpStore
     private $id;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=255, unique=true)
      */
     private $ip;
 
