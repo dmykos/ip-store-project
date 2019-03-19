@@ -10,7 +10,9 @@ class IpModel
 
     /**
      * @Assert\NotBlank
-     * @Assert\Ip
+     * @Assert\Ip(
+     *     version = "all",
+     * )
      */
     public $ip;
 
