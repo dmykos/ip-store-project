@@ -1,20 +1,16 @@
 <?php
 
 
-namespace App\Controller;
+namespace Dmykos\IpStoreBundle\Controller;
+
 
 
 use App\Entity\IpModel;
 use Dmykos\IpStoreBundle\StoreDriverInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
-use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Validator\ValidatorInterface;
 
-/**
- * @Route("/api")
- */
+
 class ApiController
 {
     /**
@@ -38,7 +34,6 @@ class ApiController
     }
 
     /**
-     * @Route("/add/{ip}", name="ip_add")
      * @param string $ip
      *
      * @return JsonResponse
@@ -62,7 +57,6 @@ class ApiController
     }
 
     /**
-     * @Route("/query/{ip}", name="ip_query")
      * @param string $ip
      *
      * @return JsonResponse

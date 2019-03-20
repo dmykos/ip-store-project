@@ -1,0 +1,3 @@
+_ip_store:
+  resource: '@DmykosIpStoreBundle/Resources/config/routes.xml'
+  prefix: '/ip'

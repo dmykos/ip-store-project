@@ -5,11 +5,16 @@
         http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
-        <service id="Dmykos\IpStoreBundle\DatabaseStoreDriver">
+        <service id="dmykos_ip_store.database_store_driver" class="Dmykos\IpStoreBundle\DatabaseStoreDriver" public="false">
             <argument type="service" id="App\Repository\IpStoreRepository" />
         </service>
 
-        <service id="Dmykos\IpStoreBundle\StoreDriverInterface" alias="Dmykos\IpStoreBundle\DatabaseStoreDriver">
+        <service id="dmykos_ip_store.store_driver_interface"  alias="dmykos_ip_store.database_store_driver" public="false">
+        </service>
+
+        <service id="dmykos_ip_store.api_controller" class="Dmykos\IpStoreBundle\Controller\ApiController" public="true">
+            <argument type="service" id="dmykos_ip_store.store_driver_interface" />
+            <argument type="service" id="Symfony\Component\Validator\Validator\ValidatorInterface"  />
         </service>
     </services>
 </container>
