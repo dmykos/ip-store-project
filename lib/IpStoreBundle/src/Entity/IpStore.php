@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Entity;
+namespace Dmykos\IpStoreBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine\ORM\Mapping\Index;
 use Doctrine\ORM\Mapping\Table;
 
 /**
- * @ORM\Entity(repositoryClass="App\Repository\IpStoreRepository")
+ * @ORM\Entity(repositoryClass="Dmykos\IpStoreBundle\Repository\IpStoreRepository")
  * @Table(name="ip_store",indexes={@Index(name="search_idx", columns={"ip"})})
  */
 class IpStore

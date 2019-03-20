@@ -15,4 +15,19 @@ class DmykosIpStoreExtension extends Extension
         $loader->load('services.xml');
 
     }
+
+ /*   public function prepend(ContainerBuilder $container)
+    {
+        $doctrineConfig = [];
+        $doctrineConfig['orm']['mappings'][] = array(
+            'name' => 'DmykosIpStoreBundle',
+            'is_bundle' => true,
+            'type' => 'annotation',
+            'prefix' => 'Dmykos\IpStoreBundle\Entity',
+            'dir' => 'Entity'
+        );
+        $container->prependExtensionConfig('doctrine', $doctrineConfig);
+
+
+    }*/
 }

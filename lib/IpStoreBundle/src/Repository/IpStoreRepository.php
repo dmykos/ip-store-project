@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Repository;
+namespace Dmykos\IpStoreBundle\Repository;
 
-use App\Entity\IpStore;
+use Dmykos\IpStoreBundle\Entity\IpStore;
 use Dmykos\IpStoreBundle\Entity\IpModel;
 use Dmykos\IpStoreBundle\StoreDriverInterface;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
@@ -63,7 +63,7 @@ class IpStoreRepository extends ServiceEntityRepository
 
                 ++$retries;
             } catch (\Exception $e) {
-                $this->rollback();
+                $conn->rollback();
                 throw $e;
             }
         } while ($retries < 10);
