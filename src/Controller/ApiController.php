@@ -52,7 +52,7 @@ class ApiController
         if (count($errors) > 0) {
             $errorsString = (string) $errors;
 
-            return new JsonResponse($errorsString, 422);
+            return new JsonResponse(['error'=>$errorsString], 422);
         }
 
         $count = $this->storeDriver->add($ipModel);

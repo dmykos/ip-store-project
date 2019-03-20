@@ -5,7 +5,11 @@
         http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
-       <!-- <service id="">
-        </service>-->
+        <service id="Dmykos\IpStoreBundle\DatabaseStoreDriver">
+            <argument type="service" id="App\Repository\IpStoreRepository" />
+        </service>
+
+        <service id="Dmykos\IpStoreBundle\StoreDriverInterface" alias="Dmykos\IpStoreBundle\DatabaseStoreDriver">
+        </service>
     </services>
 </container>
