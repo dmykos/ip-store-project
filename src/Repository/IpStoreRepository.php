@@ -4,7 +4,7 @@ namespace App\Repository;
 
 use App\Entity\IpModel;
 use App\Entity\IpStore;
-use App\Service\StoreDriverInterface;
+use Dmykos\IpStoreBundle\StoreDriverInterface;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\DBAL\Exception\RetryableException;
 use Symfony\Bridge\Doctrine\RegistryInterface;

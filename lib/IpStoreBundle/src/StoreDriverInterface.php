@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Service;
+namespace Dmykos\IpStoreBundle;
 
 
 use App\Entity\IpModel;

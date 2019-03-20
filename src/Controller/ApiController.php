@@ -5,7 +5,7 @@ namespace App\Controller;
 
 
 use App\Entity\IpModel;
-use App\Service\StoreDriverInterface;
+use Dmykos\IpStoreBundle\StoreDriverInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -52,7 +52,7 @@ class ApiController
         if (count($errors) > 0) {
             $errorsString = (string) $errors;
 
-            return new JsonResponse($errorsString);
+            return new JsonResponse($errorsString, 422);
         }
 
         $count = $this->storeDriver->add($ipModel);
