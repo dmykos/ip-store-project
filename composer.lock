@@ -4,8 +4,42 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1728141112edc8fcd2d38d4ff313d140",
+    "content-hash": "900db3269f6640201cfda6949d3847b8",
     "packages": [
+        {
+            "name": "dmykos/ip-store-bundle",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "../IpStoreBundle",
+                "reference": "0017afe10901bcb639fcc8d06e0ecb1ab5e04175",
+                "shasum": null
+            },
+            "require": {
+                "php": "^7.1.3"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "Dmykos\\IpStoreBundle\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Dmykos\\IpStoreBundle\\Tests\\": "tests/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dmytro Kosto",
+                    "email": "dmykos@gmail.com"
+                }
+            ],
+            "description": "Ip Store Bundle"
+        },
         {
             "name": "doctrine/annotations",
             "version": "v1.6.0",
@@ -6394,7 +6428,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "dmykos/ip-store-bundle": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
