@@ -5,7 +5,7 @@ namespace Dmykos\IpStoreBundle\Controller;
 
 
 
-use App\Entity\IpModel;
+use Dmykos\IpStoreBundle\Entity\IpModel;
 use Dmykos\IpStoreBundle\StoreDriverInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\Validator\Validator\ValidatorInterface;

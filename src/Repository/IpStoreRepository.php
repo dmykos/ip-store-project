@@ -2,8 +2,8 @@
 
 namespace App\Repository;
 
-use App\Entity\IpModel;
 use App\Entity\IpStore;
+use Dmykos\IpStoreBundle\Entity\IpModel;
 use Dmykos\IpStoreBundle\StoreDriverInterface;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\DBAL\Exception\RetryableException;

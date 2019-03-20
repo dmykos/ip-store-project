@@ -4,7 +4,8 @@
 namespace Dmykos\IpStoreBundle;
 
 
-use App\Entity\IpModel;
+
+use Dmykos\IpStoreBundle\Entity\IpModel;
 
 interface StoreDriverInterface {
 

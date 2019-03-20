@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Entity;
+namespace Dmykos\IpStoreBundle\Entity;
 
 use Symfony\Component\Validator\Constraints as Assert;
 
