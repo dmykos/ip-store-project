@@ -1,0 +1,2 @@
+#dmykos_ip_store:
+# store_driver: App\Service\DummyStoreDriver
