@@ -31,3 +31,6 @@ services:
 #
 #    Dmykos\IpStoreBundle\StoreDriverInterface:
 #        alias: Dmykos\IpStoreBundle\DatabaseStoreDriver
+
+#    dmykos_ip_store.store_driver_interface :
+#        alias: App\Service\DummyStoreDriver

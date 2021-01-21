@@ -18,3 +18,4 @@
 ###< symfony/web-server-bundle ###
 .env
 .idea/
+composer1.phar

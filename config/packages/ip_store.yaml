@@ -1,2 +1,11 @@
+dmykos_ip_store:
+    store_driver: App\Service\DummyStoreDriver
+
+
 #dmykos_ip_store:
-# store_driver: App\Service\DummyStoreDriver
+#    store_driver: dmykos_ip_store.database_store_driver
+#    database:
+#      table_name: stores
+#      id_column_name: store_name
+#      id_column_value: ip
+#      key_column_name: store_value
